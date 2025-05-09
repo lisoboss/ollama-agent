@@ -20,6 +20,20 @@ A lightweight HTTP proxy for remote Ollama API that optionally adds authenticati
 - For macOS Keychain support: Xcode or Xcode Command Line Tools
 - For deployment: Docker, systemd (Linux), or launchd (macOS) as needed
 
+### Installing from GitHub
+
+The quickest way to install Ollama Agent is directly from GitHub:
+
+```bash
+cargo install --git https://github.com/lisoboss/ollama-agent.git
+```
+
+For macOS Keychain support:
+
+```bash
+cargo install --git https://github.com/lisoboss/ollama-agent.git --features keychain
+```
+
 ### Building from source
 
 Clone the repository and build:
