@@ -25,7 +25,7 @@ A lightweight HTTP proxy for remote Ollama API that optionally adds authenticati
 Clone the repository and build:
 
 ```bash
-git clone https://github.com/yourusername/ollama-agent
+git clone https://github.com/lisoboss/ollama-agent.git
 cd ollama-agent
 cargo build --release
 ```
