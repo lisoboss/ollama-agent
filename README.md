@@ -1,3 +1,5 @@
+⚠️ **警告：** 该项目全部由 zed + claude 3.7 sonnet 生成，请谨慎使用！
+
 # Ollama API Proxy
 
 A lightweight HTTP proxy for remote Ollama API that optionally adds authentication headers to your requests. This tool is useful when you need to connect to a remote Ollama API that requires authentication.
