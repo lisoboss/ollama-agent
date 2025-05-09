@@ -1,0 +1,35 @@
+# Ollama Agent Docker Ignore
+
+# Rust artifacts
+target/
+**/*.rs.bk
+Cargo.lock
+
+# Development artifacts
+.git/
+.github/
+.gitignore
+.DS_Store
+**/*.swp
+**/*.swo
+.vscode/
+.idea/
+
+# Docs and examples
+README.md
+LICENSE
+examples/
+docs/
+
+# Previous builds
+**/*.tar.gz
+**/*.zip
+
+# Tests
+**/tests/
+**/*_test.rs
+**/test_*.rs
+
+# Unnecessary deployment files
+deploy/launchd/
+deploy/systemd/

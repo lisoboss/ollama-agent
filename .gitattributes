@@ -1,0 +1,44 @@
+# Git attributes for ollama-agent
+# Ensure consistent line endings across platforms
+
+# Default: Normalize line endings to LF in the repository
+* text=auto
+
+# Scripts should have LF line endings (even on Windows)
+*.sh text eol=lf
+deploy/systemd/install.sh text eol=lf
+deploy/launchd/*.sh text eol=lf
+
+# Explicitly mark binary files
+*.png binary
+*.jpg binary
+*.gif binary
+*.jpeg binary
+*.zip binary
+*.tar.gz binary
+
+# Rust-specific
+Cargo.lock linguist-generated
+
+# Docker-specific
+Dockerfile text eol=lf
+.dockerignore text eol=lf
+docker-compose.yml text eol=lf
+deploy/docker/docker-compose.yml text eol=lf
+
+# Markdown and documentation
+*.md text
+LICENSE text
+*.txt text
+
+# Configuration files
+.gitignore text
+.gitattributes text
+*.toml text
+*.json text
+*.yml text
+*.yaml text
+
+# Service files
+*.service text eol=lf
+*.plist text

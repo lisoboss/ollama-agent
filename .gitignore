@@ -1,0 +1,22 @@
+# Generated files and directories
+/target/
+**/*.rs.bk
+*.pdb
+Cargo.lock
+
+# Environment and IDE
+.env
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Log files
+*.log
+
+# OS-specific files
+.DS_Store
+.Spotlight-V100
+.Trashes
+Thumbs.db
+Desktop.ini

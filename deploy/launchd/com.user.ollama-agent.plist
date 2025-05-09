@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.user.ollama-agent</string>
+    
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/local/bin/ollama-agent</string>
+        <string>--local-addr</string>
+        <string>127.0.0.1:11434</string>
+        <string>--remote-url</string>
+        <string>https://api.ollama.ai</string>
+        <!-- Uncomment and add your API key if needed
+        <string>--api-key</string>
+        <string>your_api_key_here</string>
+        -->
+    </array>
+    
+    <key>RunAtLoad</key>
+    <true/>
+    
+    <key>KeepAlive</key>
+    <true/>
+    
+    <key>StandardErrorPath</key>
+    <string>/tmp/ollama-agent.err</string>
+    
+    <key>StandardOutPath</key>
+    <string>/tmp/ollama-agent.out</string>
+    
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>RUST_LOG</key>
+        <string>info</string>
+    </dict>
+    
+    <key>ProcessType</key>
+    <string>Background</string>
+    
+    <key>ThrottleInterval</key>
+    <integer>30</integer>
+</dict>
+</plist>

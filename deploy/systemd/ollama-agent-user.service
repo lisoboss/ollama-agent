@@ -1,0 +1,21 @@
+[Unit]
+Description=Ollama Agent Proxy Service (User Mode)
+After=network.target
+Documentation=https://github.com/yourusername/ollama-agent
+
+[Service]
+Type=simple
+ExecStart=%h/.local/bin/ollama-agent --local-addr 127.0.0.1:11434 --remote-url https://api.ollama.ai
+Restart=on-failure
+RestartSec=10
+Environment=RUST_LOG=info
+# Uncomment to specify an API key
+#Environment=OLLAMA_API_KEY=your_api_key_here
+
+# Security enhancements
+NoNewPrivileges=true
+ProtectSystem=full
+PrivateTmp=true
+
+[Install]
+WantedBy=default.target
